@@ -377,12 +377,19 @@
   .header-inner{max-width: 37rem;}
   .header-inner-bottom{display: none;}
   .header-inner-top .logo img{
-    width: 20rem;
-    height: 3.2rem;
+    width: 18rem;
+    height: 3rem;
   }
-
+  .trigger{
+    width: 2.5rem;
+    height: 1.5rem;
+  }
   .tr-modal-top{width: 100%;}
   .tr-modal-bottom{width: 100%;}
+  .tab-icon a img{
+    width: 2.7rem;
+    height: 2.7rem;
+  }
 
   /* main */
   main{
@@ -649,10 +656,12 @@
     font-size: 1.2rem;
     font-weight: 500;
   }
+  .policy a:nth-child(3){border-right: none;}
   .policy a:nth-child(4){display: none;}
   address .info{font-size: 1.2rem;}
   address .info p{padding: 0 1.2rem;}
   .info p:first-child{padding-left: 1.4rem;}
+  .info p:nth-child(2){border-right: none;}
   .info p:last-child{display: none;}
   address .sns img{
     display: block;
