@@ -973,6 +973,7 @@ section h4{
 }
 
 /* footer */
+.foot-mob-only{display: none;}
 footer{
   padding: 10rem 0;
   display: flex;

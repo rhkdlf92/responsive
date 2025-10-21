@@ -374,7 +374,7 @@
   
   /* header */
   header{height: 7.5rem;}
-  .header-inner{max-width: 40rem;}
+  .header-inner{max-width: 37rem;}
   .header-inner-bottom{display: none;}
   .header-inner-top .logo img{
     width: 20rem;
@@ -423,7 +423,7 @@
   }
   
   /* metaphore*/
-  .meta-inner{max-width: 50rem;}
+  .meta-inner{max-width: 40rem;}
   .meta img{
     width: 9rem;
     height: 9rem;
@@ -443,17 +443,17 @@
     font-size: 3.5rem;
   }
   section h4{
-    max-width: 42rem;
+    max-width: 34rem;
     font-size: 2.4rem;
   }
-  .recommend{max-width: 50rem;}
+  .recommend{max-width: 37rem;}
   .recommend-box-top{justify-content: center;}
   .recommend-box-top .box-top-inner:last-child{display: none;}
-  .recommend-box-top .box-top-inner{width: 90%;}
+  .recommend-box-top .box-top-inner{width: 100%;}
   .recommend-box-top img{
     width: 9rem;
-    height: 13rem;
-    margin-right: 4rem;
+    height: 12rem;
+    margin-right: 2rem;
 
   }
   .recommend-box-bottom{height: 36rem;}
@@ -462,14 +462,15 @@
     display: none;
   }
   .recommend-box-bottom ul li img{
-    width: 20rem;
-    height: 30rem;
+    width: 15rem;
+    height: 23rem;
   }
   .recommend-box-bottom ul li:before{
-    width: 20rem;
+    width: 15rem;
     bottom: 5.8rem;}
   .recommend-box-bottom ul li:after{
     background-size: 2rem 2rem, 2rem 2rem;
+    width: 12rem;
   }
 
   /* section2 */
@@ -478,12 +479,13 @@
   .tdeal.tab-only{display: none;}
   .time-box.tab-only{display: none;}
   .time{
-    max-width: 50rem;
+    max-width: 37rem;
     justify-content: center;
   }
   .time-box{
     margin-bottom: 0;
     height: 40rem;
+    max-width: 37rem;
   }
   .time-box ul{
     justify-content: center;
@@ -492,24 +494,39 @@
   .time-box ul li:nth-child(3){
     display: none;
   }
-  
+  .time-box ul li img{
+    width: 18rem;
+    height: 23rem;
+  }
+  .time-box ul li:before{
+    width: 16.8rem;
+    top: 18.5rem;
+  }
+  .time-box ul li:after{
+    top: 19.5rem;
+  }
+  .deal-price span:nth-child(3){
+    font-size: 1.2rem;
+  }
+
+
   /* ad */
   .ad-inner .mob-only{display: block;}
   .ad{padding-top: 10rem;}
   .ad-inner{
-    max-width: 50rem;
+    max-width: 40rem;
     height: 16rem;
   }
-  .ad-inner p{font-size: 1.8rem;}
+  .ad-inner p{font-size: 1.5rem;}
   .ad-inner img{
-    width: 20rem;
-    height: 10rem;
+    width: 18rem;
+    height: 9rem;
   }
 
   /* section3 */
   .live .tab-mob-tit,
   .author .tab-mob-tit{
-    max-width: 46rem;
+    max-width: 37rem;
     margin: auto;
   }
   .live a .material-symbols-outlined,
@@ -517,7 +534,7 @@
     transform: translate(1.2rem, -0.6rem);
   }
   .live-author{
-    max-width: 48rem;
+    max-width: 37rem;
     height: 112rem;
     row-gap: 7rem;
   }
@@ -526,10 +543,17 @@
     row-gap: 2rem;
   }
   .live-box-all{
-    width: 96%;
+    width: 100%;
     margin: auto;
   }
   .live-tit{display: none;}
+  .live-box.box1 img{
+    width: 12rem;
+}
+  .live-box-inner img{
+    width: 15rem;
+    height: 18rem;
+  }
   .author-inner{
     flex-direction: column;
     row-gap: 2rem;
@@ -543,33 +567,35 @@
     display: flex;
     justify-content: flex-start;
   }
-  .author-box.box1 img{
-    margin: 0 4.5rem;
+  .author-box-inner img{
+    margin: 0 2rem;
+    width: 10rem;
+    height: 10rem;
   }
-  .author-box.box2 img{
-    margin: 0 4.8rem;
-  }
+  .author-des p{font-size: 1.3rem;}
+  .author-box.box2 p span{font-size: 1.15rem;}
 
   /* section4 */
   #s4{padding-bottom: 10rem;}
-  .s4-inner .goods-tit{max-width: 46rem;}
+  .s4-inner .goods-tit{max-width: 37rem;}
   .s4-inner a .material-symbols-outlined{
     transform: translateX(1.2rem);}
   .goods{
-    max-width: 47rem;
+    max-width: 37rem;
     height: 26rem;
   }
   .goods ul li:nth-child(3){display: none;}
-  .goods ul li a{width: 20rem;}
+  .goods ul li a{width: 17rem;}
   .goods ul li img{
-    width: 20rem;
-    height: 20rem;
+    width: 17rem;
+    height: 17rem;
   }
 
   /* footer */
+  .foot-mob-only{display: block;}
   footer{padding: 6rem 0;}
   .foot{
-    max-width: 46rem;
+    max-width: 37rem;
     row-gap: 3rem;
   }
   .customer{
@@ -623,10 +649,11 @@
     font-size: 1.2rem;
     font-weight: 500;
   }
-  address .info{font-size: 1rem;}
+  .policy a:nth-child(4){display: none;}
+  address .info{font-size: 1.2rem;}
   address .info p{padding: 0 1.2rem;}
   .info p:first-child{padding-left: 1.4rem;}
-
+  .info p:last-child{display: none;}
   address .sns img{
     display: block;
     width: 2.3rem;
