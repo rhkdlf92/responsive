@@ -374,7 +374,7 @@
   
   /* header */
   header{height: 7.5rem;}
-  .header-inner{max-width: 46rem;}
+  .header-inner{max-width: 40rem;}
   .header-inner-bottom{display: none;}
   .header-inner-top .logo img{
     width: 20rem;
