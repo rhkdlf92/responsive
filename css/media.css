@@ -374,7 +374,10 @@
   
   /* header */
   header{height: 7.5rem;}
-  .header-inner{max-width: 37rem;}
+  .header-inner{
+    max-width: 37rem;
+    width: 100%;
+  }
   .header-inner-bottom{display: none;}
   .header-inner-top .logo img{
     width: 18rem;
@@ -396,12 +399,17 @@
     padding-top: 7.5rem;
     height: 67.5rem;
   }
-  .main-inner{max-width: 50rem;}
+  .main-inner{
+    max-width: 50rem;
+    width: 100%;
+    overflow: hidden;
+  }
 
   .main-visual ul li{
-    max-width: 50rem;
     padding: 2.5rem 0;
     row-gap: 5rem;
+    max-width: 50rem;
+    overflow: hidden;
     justify-content: center;
     align-items: flex-start;
   }
@@ -430,7 +438,11 @@
   }
   
   /* metaphore*/
-  .meta-inner{max-width: 40rem;}
+  .meta-inner{
+    max-width: 40rem;
+    width: 100%;
+    overflow: hidden;
+  }
   .meta img{
     width: 9rem;
     height: 9rem;
@@ -451,9 +463,14 @@
   }
   section h4{
     max-width: 34rem;
+    overflow: hidden;
     font-size: 2.4rem;
   }
-  .recommend{max-width: 37rem;}
+  .recommend{
+    max-width: 37rem;
+    width: 100%;
+    overflow: hidden;
+  }
   .recommend-box-top{justify-content: center;}
   .recommend-box-top .box-top-inner:last-child{display: none;}
   .recommend-box-top .box-top-inner{width: 100%;}
@@ -487,12 +504,18 @@
   .time-box.tab-only{display: none;}
   .time{
     max-width: 37rem;
+    width: 100%;
+    overflow: hidden;
+    font-size: 1.7rem;
     justify-content: center;
   }
   .time-box{
     margin-bottom: 0;
     height: 40rem;
     max-width: 37rem;
+    width: 100%;
+    overflow: hidden;
+
   }
   .time-box ul{
     justify-content: center;
@@ -505,6 +528,8 @@
     width: 18rem;
     height: 23rem;
   }
+  .time-box ul li p{font-size: 1.4rem;}
+  .time-box ul li p span{font-size: 1.2rem;}
   .time-box ul li:before{
     width: 16.8rem;
     top: 18.5rem;
@@ -522,7 +547,9 @@
   .ad{padding-top: 10rem;}
   .ad-inner{
     max-width: 40rem;
+    width: 100%;
     height: 16rem;
+    overflow: hidden;
   }
   .ad-inner p{font-size: 1.5rem;}
   .ad-inner img{
@@ -534,6 +561,8 @@
   .live .tab-mob-tit,
   .author .tab-mob-tit{
     max-width: 37rem;
+    width: 100%;
+    overflow: hidden;
     margin: auto;
   }
   .live a .material-symbols-outlined,
@@ -542,6 +571,8 @@
   }
   .live-author{
     max-width: 37rem;
+    width: 100%;
+    overflow: hidden;
     height: 112rem;
     row-gap: 7rem;
   }
@@ -584,11 +615,17 @@
 
   /* section4 */
   #s4{padding-bottom: 10rem;}
-  .s4-inner .goods-tit{max-width: 37rem;}
+  .s4-inner .goods-tit{
+    max-width: 37rem;
+    width: 100%;
+    overflow: hidden;
+  }
   .s4-inner a .material-symbols-outlined{
     transform: translateX(1.2rem);}
   .goods{
     max-width: 37rem;
+    width: 100%;
+    overflow: hidden;
     height: 26rem;
   }
   .goods ul li:nth-child(3){display: none;}
@@ -603,6 +640,8 @@
   footer{padding: 6rem 0;}
   .foot{
     max-width: 37rem;
+    width: 100%;
+    overflow: hidden;
     row-gap: 3rem;
   }
   .customer{
