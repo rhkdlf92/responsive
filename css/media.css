@@ -35,14 +35,14 @@
   .trOpen .tr-menu-all{display: none;}
   .tr-modal{
     display: block;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: -120%;
     font-size: 1.5rem;
     background-color: rgba(0,0,0,0.7);
-    z-index: 1000;
+    z-index: 1;
   }
   .tr-modal-top{
     width: 70%;
@@ -65,7 +65,7 @@
     width: 19rem;
     height: 4rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     border: 0.1rem solid rgba(255,255,255,0.8);
     border-radius: 2rem;
@@ -76,15 +76,15 @@
   .log-join a:first-child:after{
     content: '|';
     display: inline-block;
-    margin-left: 2.2rem;
+    margin-left: 1.8rem;
   }
   .tr-modal-bottom{
     background-color: #fff;
     padding: 3.5rem 10rem;
     position: absolute;
     width: 70%;
-    height: 100%;
-    z-index: 1000;
+    height: 100vh;
+    z-index: 1;
   }
   .tab-main>a{
     font-family: 'NationalPension';
@@ -371,45 +371,30 @@
 
 /* moblie 767px이하 */
 @media screen and (max-width:767px) {
-  
+
   /* header */
   header{height: 7.5rem;}
-  .header-inner{
-    max-width: 37rem;
-    width: 100%;
-  }
+  .header-inner{max-width: 46rem;}
   .header-inner-bottom{display: none;}
   .header-inner-top .logo img{
-    width: 18rem;
-    height: 3rem;
+    width: 20rem;
+    height: 3.2rem;
   }
-  .trigger{
-    width: 2.5rem;
-    height: 1.5rem;
-  }
+
   .tr-modal-top{width: 100%;}
   .tr-modal-bottom{width: 100%;}
-  .tab-icon a img{
-    width: 2.7rem;
-    height: 2.7rem;
-  }
 
   /* main */
   main{
     padding-top: 7.5rem;
     height: 67.5rem;
   }
-  .main-inner{
-    max-width: 50rem;
-    width: 100%;
-    overflow: hidden;
-  }
+  .main-inner{max-width: 50rem;}
 
   .main-visual ul li{
+    max-width: 50rem;
     padding: 2.5rem 0;
     row-gap: 5rem;
-    max-width: 50rem;
-    overflow: hidden;
     justify-content: center;
     align-items: flex-start;
   }
@@ -438,11 +423,7 @@
   }
   
   /* metaphore*/
-  .meta-inner{
-    max-width: 40rem;
-    width: 100%;
-    overflow: hidden;
-  }
+  .meta-inner{max-width: 50rem;}
   .meta img{
     width: 9rem;
     height: 9rem;
@@ -462,22 +443,17 @@
     font-size: 3.5rem;
   }
   section h4{
-    max-width: 34rem;
-    overflow: hidden;
+    max-width: 42rem;
     font-size: 2.4rem;
   }
-  .recommend{
-    max-width: 37rem;
-    width: 100%;
-    overflow: hidden;
-  }
+  .recommend{max-width: 50rem;}
   .recommend-box-top{justify-content: center;}
   .recommend-box-top .box-top-inner:last-child{display: none;}
-  .recommend-box-top .box-top-inner{width: 100%;}
+  .recommend-box-top .box-top-inner{width: 90%;}
   .recommend-box-top img{
     width: 9rem;
-    height: 12rem;
-    margin-right: 2rem;
+    height: 13rem;
+    margin-right: 4rem;
 
   }
   .recommend-box-bottom{height: 36rem;}
@@ -486,15 +462,14 @@
     display: none;
   }
   .recommend-box-bottom ul li img{
-    width: 15rem;
-    height: 23rem;
+    width: 20rem;
+    height: 30rem;
   }
   .recommend-box-bottom ul li:before{
-    width: 15rem;
+    width: 20rem;
     bottom: 5.8rem;}
   .recommend-box-bottom ul li:after{
     background-size: 2rem 2rem, 2rem 2rem;
-    width: 12rem;
   }
 
   /* section2 */
@@ -503,19 +478,12 @@
   .tdeal.tab-only{display: none;}
   .time-box.tab-only{display: none;}
   .time{
-    max-width: 37rem;
-    width: 100%;
-    overflow: hidden;
-    font-size: 1.7rem;
+    max-width: 50rem;
     justify-content: center;
   }
   .time-box{
     margin-bottom: 0;
     height: 40rem;
-    max-width: 37rem;
-    width: 100%;
-    overflow: hidden;
-
   }
   .time-box ul{
     justify-content: center;
@@ -524,45 +492,24 @@
   .time-box ul li:nth-child(3){
     display: none;
   }
-  .time-box ul li img{
-    width: 18rem;
-    height: 23rem;
-  }
-  .time-box ul li p{font-size: 1.4rem;}
-  .time-box ul li p span{font-size: 1.2rem;}
-  .time-box ul li:before{
-    width: 16.8rem;
-    top: 18.5rem;
-  }
-  .time-box ul li:after{
-    top: 19.5rem;
-  }
-  .deal-price span:nth-child(3){
-    font-size: 1.2rem;
-  }
-
-
+  
   /* ad */
   .ad-inner .mob-only{display: block;}
   .ad{padding-top: 10rem;}
   .ad-inner{
-    max-width: 40rem;
-    width: 100%;
+    max-width: 50rem;
     height: 16rem;
-    overflow: hidden;
   }
-  .ad-inner p{font-size: 1.5rem;}
+  .ad-inner p{font-size: 1.8rem;}
   .ad-inner img{
-    width: 18rem;
-    height: 9rem;
+    width: 20rem;
+    height: 10rem;
   }
 
   /* section3 */
   .live .tab-mob-tit,
   .author .tab-mob-tit{
-    max-width: 37rem;
-    width: 100%;
-    overflow: hidden;
+    max-width: 46rem;
     margin: auto;
   }
   .live a .material-symbols-outlined,
@@ -570,9 +517,7 @@
     transform: translate(1.2rem, -0.6rem);
   }
   .live-author{
-    max-width: 37rem;
-    width: 100%;
-    overflow: hidden;
+    max-width: 48rem;
     height: 112rem;
     row-gap: 7rem;
   }
@@ -581,17 +526,10 @@
     row-gap: 2rem;
   }
   .live-box-all{
-    width: 100%;
+    width: 96%;
     margin: auto;
   }
   .live-tit{display: none;}
-  .live-box.box1 img{
-    width: 12rem;
-}
-  .live-box-inner img{
-    width: 15rem;
-    height: 18rem;
-  }
   .author-inner{
     flex-direction: column;
     row-gap: 2rem;
@@ -605,43 +543,33 @@
     display: flex;
     justify-content: flex-start;
   }
-  .author-box-inner img{
-    margin: 0 2rem;
-    width: 10rem;
-    height: 10rem;
+  .author-box.box1 img{
+    margin: 0 4.5rem;
   }
-  .author-des p{font-size: 1.3rem;}
-  .author-box.box2 p span{font-size: 1.15rem;}
+  .author-box.box2 img{
+    margin: 0 4.8rem;
+  }
 
   /* section4 */
   #s4{padding-bottom: 10rem;}
-  .s4-inner .goods-tit{
-    max-width: 37rem;
-    width: 100%;
-    overflow: hidden;
-  }
+  .s4-inner .goods-tit{max-width: 46rem;}
   .s4-inner a .material-symbols-outlined{
     transform: translateX(1.2rem);}
   .goods{
-    max-width: 37rem;
-    width: 100%;
-    overflow: hidden;
+    max-width: 47rem;
     height: 26rem;
   }
   .goods ul li:nth-child(3){display: none;}
-  .goods ul li a{width: 17rem;}
+  .goods ul li a{width: 20rem;}
   .goods ul li img{
-    width: 17rem;
-    height: 17rem;
+    width: 20rem;
+    height: 20rem;
   }
 
   /* footer */
-  .foot-mob-only{display: block;}
   footer{padding: 6rem 0;}
   .foot{
-    max-width: 37rem;
-    width: 100%;
-    overflow: hidden;
+    max-width: 46rem;
     row-gap: 3rem;
   }
   .customer{
@@ -695,13 +623,10 @@
     font-size: 1.2rem;
     font-weight: 500;
   }
-  .policy a:nth-child(3){border-right: none;}
-  .policy a:nth-child(4){display: none;}
-  address .info{font-size: 1.2rem;}
+  address .info{font-size: 1rem;}
   address .info p{padding: 0 1.2rem;}
   .info p:first-child{padding-left: 1.4rem;}
-  .info p:nth-child(2){border-right: none;}
-  .info p:last-child{display: none;}
+
   address .sns img{
     display: block;
     width: 2.3rem;
