@@ -37,6 +37,7 @@ header{
   align-items: center;
   padding: 2rem 0 0 0;
   position: fixed;
+  overflow: hidden;
   background-color: #fff;
   border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
   z-index: 10000;
@@ -234,6 +235,7 @@ main{
   padding-top: 15rem;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 .main-inner{
   position: relative;
@@ -354,6 +356,7 @@ main{
   justify-content: center;
   border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
   border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 .meta-inner{
   width: 120rem;
@@ -408,6 +411,7 @@ section h4{
 }
 #s1, #s2, #s3, #s4{
   width: 100%;
+  overflow: hidden;
 }
 .s1-inner{
   display: flex;
@@ -730,6 +734,7 @@ section h4{
   padding-top: 15rem;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 .ad-inner{
   width: 120rem;
@@ -979,6 +984,7 @@ footer{
   justify-content: center;
   background-color: #2d1101;
   color: rgba(255, 255, 255, 0.6);
+  overflow: hidden;
 }
 .foot{
   width: 120rem;
